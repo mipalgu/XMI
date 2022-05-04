@@ -30,9 +30,8 @@ jobs:
       #- name: Reconfigure Private Repo URLs
       #  run: sed -i 's/git@github.com:/https:\/\/${{ secrets.ACCESS_TOKEN }}@github.com\//g' Package.swift
 
-      - name: Run tests
-        run: swift test --enable-code-coverage
-        uses: mattpolzin/swift-codecov-action@0.7.3
+      - run: swift test --enable-code-coverage
+      - uses: mattpolzin/swift-codecov-action@0.7.3
         with:
           MINIMUM_COVERAGE: 0
 
