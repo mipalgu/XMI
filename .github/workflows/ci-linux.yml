@@ -38,5 +38,4 @@ jobs:
         id: cov
         with:
           MINIMUM_COVERAGE: 0
-          INCLUDE_DEPENDENCIES: 'false'
 
