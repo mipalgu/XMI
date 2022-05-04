@@ -32,10 +32,7 @@ jobs:
 
       - name: Run tests
         run: swift test --enable-code-coverage
-
-      - name: Coverage Report
-        uses: mattpolzin/swift-codecov-action@0.7.0
-        id: cov
+        uses: mattpolzin/swift-codecov-action@0.7.3
         with:
           MINIMUM_COVERAGE: 0
 
